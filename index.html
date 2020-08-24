@@ -6,7 +6,7 @@
 
   <title>Crossword Puzzle</title>
   <meta name="description" content="The HTML5 Herald">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -19,17 +19,29 @@
 
     <div class="hint"> (c1, r1-r3): alex </div>
     <div class="hint"> (c1, r1-r3): alex </div>
+    <button onclick="check()" class="btn btn-secondary"> check </button>
+    <h3> When you are done </h3>
+    <form name="submit-to-google-sheet" class="big-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input name="name"  placeholder="name" id='name' required>
+      </div>
+      <div class="form-group">
+        <label for="class">Class</label>
+        <input name="class"  placeholder="class" id='class' required>
+      </div>
+      <button class="btn btn-primary" type="submit">DONE</button>
+    </form>
   </div>
-<button onclick="check()" class="button"> check </button>
 
 
-<form name="submit-to-google-sheet">
-  <input name="name"  placeholder="name" required>
-  <input name="class"  placeholder="class" required>
-  <button type="submit">Send</button>
-</form>
+
+
 
 
  <script src="./script.js"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
