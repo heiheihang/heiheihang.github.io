@@ -71,12 +71,11 @@ function check() {
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxBY7Xg_b1UvKbMaZSInXUnxWgfGS9fl9ke2B0R1RorRJHFZJwH/exec'
     const form = document.forms['submit-to-google-sheet']
 
-    form.addEventListener('submit', e => {
-      e.preventDefault()
+
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
-    })
+
   } else {
     console.log('incorrect');
   }
