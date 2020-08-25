@@ -20,6 +20,7 @@
       </div>
       <div class="col-6">
         <h1> C and T S.1 Competition </h1>
+        <div> Please put down your name and class or else your attempt will not be recorded </div>
         <form name="submit-to-google-sheet" class="big-form">
           <div class="form-group">
             <label for="name">Name</label>
@@ -27,7 +28,7 @@
           </div>
            <div class="col-3 my-2">
              <label for="inlineFormCustomSelect">Class</label>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="class">
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="class" required>
             <option selected>Class...</option>
             <option value="1a">1A</option>
             <option value="1b">1B</option>
@@ -37,8 +38,7 @@
           </div>
         </form>
         <div id="container"></div>
-        <div> hi </div>
-        <button onclick="check()" class="btn btn-secondary"> check </button>
+        <button onclick="check()" class="btn btn-secondary"> Submit </button>
       </div>
       <div class="col-4">
         <h2> Hints </h2>
