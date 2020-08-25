@@ -20,6 +20,22 @@
       </div>
       <div class="col-6">
         <h1> C and T S.1 Competition </h1>
+        <form name="submit-to-google-sheet" class="big-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input name="name"  placeholder="name" id='name' required>
+          </div>
+           <div class="col-3 my-2">
+             <label for="inlineFormCustomSelect">Class</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="class">
+            <option selected>Class...</option>
+            <option value="1a">1A</option>
+            <option value="1b">1B</option>
+            <option value="1c">1C</option>
+            <option value="1d">1D</option>
+          </select>
+          </div>
+        </form>
         <div id="container"></div>
         <div> hi </div>
         <button onclick="check()" class="btn btn-secondary"> check </button>
@@ -33,27 +49,6 @@
     </div>
     <div class="row">
       <div class="col-2">
-      </div>
-      <div class="hint-section">
-
-        <h3> When you are done </h3>
-        <form name="submit-to-google-sheet" class="big-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input name="name"  placeholder="name" id='name' required>
-          </div>
-           <div class=".col-sm- my-2">
-             <label for="inlineFormCustomSelect">Class</label>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="class">
-            <option selected>Class...</option>
-            <option value="1a">1A</option>
-            <option value="1b">1B</option>
-            <option value="1c">1C</option>
-            <option value="1d">1D</option>
-          </select>
-          </div>
-          <button class="btn btn-primary" type="submit">DONE</button>
-        </form>
       </div>
     </div>
   </div>
