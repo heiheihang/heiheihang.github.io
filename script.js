@@ -1,6 +1,6 @@
-var grid = [[1,1,1], [1,1,1],[1,1,0]];
+var grid = [[1,0,1], [1,1,1],[1,1,0]];
 
-var solution = [['a','a','a'], ['a','a','a'], ['a','a',0]];
+var solution = [['a',0,'a'], ['a','a','a'], ['a','a',0]];
 
 var l = 3
 const container = document.getElementById("container");
