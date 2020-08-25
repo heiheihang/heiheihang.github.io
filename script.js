@@ -1,8 +1,8 @@
-var grid = [[1,0,1], [1,1,1],[1,1,0]];
+var grid = [[1,0,1,1], [1,0,1,0],[1,1,1,1],[1,0,0,1]];
 
-var solution = [['a',0,'a'], ['a','a','a'], ['a','a',0]];
+var solution = [['a',0,'a','a'], ['a',0,'a',0], ['a','a','a','a'],['a',0,0,'a']];
 
-var l = 3
+var l = 4
 const container = document.getElementById("container");
 
 function makeRows(rows, cols) {
