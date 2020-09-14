@@ -99,9 +99,10 @@ function check() {
   for(i = 0; i < l*l;i++) {
     var square = document.getElementById(i);
     console.log(square.value);
-    var x = Math.floor(i/3);
-    var y = i % 3
+    var x = Math.floor(i/l);
+    var y = i % l
     if(square.value != solution[x][y]) {
+      console.log(square.value + ' ' + solution[x][y]);
       flag = 0;
       square.style.backgroundColor = "red";
     } else if(grid[x][y] == 1){
